@@ -780,7 +780,7 @@ const LandingPage = () => {
           <NavLinks>
           </NavLinks>
           <div style={{ flex: '0 0 auto', marginLeft: 32, display: 'flex', alignItems: 'center', gap: 0 }}>
-            <NavSecondaryButton>Login</NavSecondaryButton>
+            <NavSecondaryButton as="a" href="https://app.proflr.nl">Login</NavSecondaryButton>
             <NavButton as="a" href="https://cal.com/pompadourventures/proflrdemo" target="_blank" rel="noopener noreferrer">Schedule a Demo</NavButton>
           </div>
           {!mobileMenuOpen && (
