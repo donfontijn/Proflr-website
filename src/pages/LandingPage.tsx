@@ -870,12 +870,7 @@ const LandingPage = () => {
           <FeatureGrid>
             <FeatureCol>
               <FeatureIcon>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
+                <img src="/feature-staff-right-people.svg" alt="Staff the right people" />
               </FeatureIcon>
               <FeatureTitle>Staff the right people</FeatureTitle>
               <FeatureDescription>
@@ -884,14 +879,7 @@ const LandingPage = () => {
             </FeatureCol>
             <FeatureCol>
               <FeatureIcon>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 8a6 6 0 0 1-12 0"/>
-                  <rect x="6" y="2" width="12" height="6" rx="2"/>
-                  <path d="M9 18v-2"/>
-                  <path d="M15 18v-2"/>
-                  <path d="M8 22h8"/>
-                  <path d="M12 16v6"/>
-                </svg>
+                <img src="/feature-availability.svg" alt="Up-to-date availability" />
               </FeatureIcon>
               <FeatureTitle>Up-to-date availability</FeatureTitle>
               <FeatureDescription>
@@ -900,12 +888,7 @@ const LandingPage = () => {
             </FeatureCol>
             <FeatureCol>
               <FeatureIcon>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 19v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                  <circle cx="12" cy="7" r="4"/>
-                  <path d="M16 11V7a4 4 0 0 0-8 0v4"/>
-                  <rect x="8" y="15" width="8" height="6" rx="2"/>
-                </svg>
+                <img src="/feature-grow-skills.svg" alt="Grow the right skills" />
               </FeatureIcon>
               <FeatureTitle>Grow the right skills</FeatureTitle>
               <FeatureDescription>
@@ -927,7 +910,7 @@ const LandingPage = () => {
                     <LargeVisualPlaceholder>
                       <img 
                         alt="Connected onboarding visual" 
-                        src="http://localhost:3845/assets/4874e3ef05efdb0a3a63cc89ce480cd4a67d78c2.svg"
+                        src="/connected_onboarding.svg"
                         style={{ width: '329px', height: '458px' }}
                       />
                     </LargeVisualPlaceholder>
@@ -958,7 +941,7 @@ const LandingPage = () => {
                     <LargeVisualPlaceholder>
                       <img 
                         alt="Team intelligence visual" 
-                        src="http://localhost:3845/assets/4bc6398a8b47f3ec4285705e4a4747fc4ba9638b.svg"
+                        src="/team_intelligence.svg"
                         style={{ width: '331px', height: '458px' }}
                       />
                     </LargeVisualPlaceholder>
@@ -994,7 +977,7 @@ const LandingPage = () => {
                   <OnboardingFeatureIcon>
                     <img 
                       alt="Smart project matching icon" 
-                      src="http://localhost:3845/assets/a3b831a2d62779ef080a625f3066a0c43297fbe4.svg"
+                      src="/smart-project-matching.svg"
                       width="20"
                       height="20"
                     />
@@ -1213,9 +1196,13 @@ const FeatureIcon = styled.div`
   font-size: 32px;
   margin-bottom: 24px;
   color: #2D3C33;
+  display: flex;
+  align-items: center;
+  img,
   svg {
     width: 32px;
     height: 32px;
+    display: block;
   }
 `;
 
